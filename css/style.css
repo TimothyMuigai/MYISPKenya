@@ -1,0 +1,108 @@
+/* index.html styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #ffffff;  
+    text-align: center;
+}
+header {
+    margin-top: 50px;
+    border-top: 1px inset;
+    border-bottom: 1px outset;
+    word-wrap: break-word;
+    padding: 20px 0 60px;
+    line-height: 3em;
+    
+}
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.colors {
+    background: linear-gradient(45deg, green, red, black);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Make the text transparent so background shows */
+}
+.green{
+    color: rgba(0, 128, 0, 0.822);
+}
+.tagline {
+    font-size: 1.2rem;
+    color: #333;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+.tagline:hover {
+    text-decoration: underline;
+}
+.tagline {
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container{
+    max-width: 100%;
+    background-color: #fafafa;
+    padding-top: 3rem;
+    
+}
+.container h2 ,.container p{
+    line-height: 2em;
+}
+.cards{
+    margin: auto ;
+    display: grid;
+    gap: 10px;
+    row-gap: 50px;
+    column-gap: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
+    padding: 50px;   
+}
+.card{
+      
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 6px #e7e7e77e, -4px -4px 6px #e7e7e7a3;
+    padding-bottom: 1.5rem;
+    border-radius: 15px;
+    transition-duration: 300ms;
+    transition-property: box-shadow;
+}
+.card:hover{
+    box-shadow: 16px 16px 6px #e7e7e74b, -16px -16px 6px #e7e7e74b;
+}
+.images{    
+    height: 100%;
+    max-height: 100px;
+    align-self: flex-start;
+
+}
+img{
+    height: 100%;
+    margin-left: 1.1125rem;
+    max-width: 100%;
+    
+}
+.text h2, .text p{
+    line-height: 3em;
+}
+
+footer{
+    border: 2px solid;
+}
