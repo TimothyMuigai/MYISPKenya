@@ -1,4 +1,4 @@
-/* index.html styling */
+/* index.html*/
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +8,8 @@
 body {
     background-color: #ffffff;  
     text-align: center;
+    height: 418vh;
+
 }
 header {
     margin-top: 50px;
@@ -15,8 +17,7 @@ header {
     border-bottom: 1px outset;
     word-wrap: break-word;
     padding: 20px 0 60px;
-    line-height: 3em;
-    
+    line-height: 3em;    
 }
 h1 {
     font-size: 3rem;
@@ -51,7 +52,44 @@ h1 {
     }
 }
 
+.location{
+    margin: 10px auto 0;
+    border: 1px solid rgba(139, 126, 126, 0.626);
+    height: 2.3rem;
+    width: 30%;
+    border-radius: 20px;
+    display: flex;
+}
+.location:hover{
+    box-shadow: 4px 4px 6px #e7e7e77e, -4px -4px 6px #e7e7e7a3;
+}
+#location{
+    width: 80%;
+    border-radius: 20px;
+    text-indent: .7rem;
+    background-color: transparent;
+    border-color: transparent;
+    outline: none;    
+}
+
+.location img{
+    margin-left: .1125rem;
+    height: 80%;
+    align-self: center;
+
+}
+.location button{
+    border-radius: 20px;
+    padding: 0 .5rem 0 .5rem;
+    border-color: transparent;
+}
+.location button:hover{
+    text-decoration: underline;
+    font-size: 1em;
+}
+
 .container{
+    
     max-width: 100%;
     background-color: hsl(0, 0%, 97%);
     padding-top: 3rem;
@@ -68,7 +106,8 @@ h1 {
     column-gap: 70px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     width: 100%;
-    padding: 50px;   
+    padding: 50px; 
+      
 }
 .card{
       
@@ -91,18 +130,75 @@ h1 {
     height: 100%;
     max-height: 100px;
     align-self: flex-start;
-
 }
 img{
     height: 100%;
     margin-left: 1.1125rem;
-    max-width: 100%;
-    
+    max-width: 100%;   
 }
 .text h2, .text p{
     line-height: 3em;
 }
-
+.info{
+    align-self: flex-start;
+    padding: .2rem 3rem .4rem;
+    margin-top: .5rem;
+    font-size: smaller;
+}
+.card-h3{    
+    align-self: flex-start;
+    padding: 0 3rem 0;
+}
+.ratings{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    min-width: 100%;
+    padding: .5rem 0 .5rem 3rem;
+}
+.ratings img {
+    height: 1.5rem;
+}
+.card button{
+    border: 2px solid;
+    width: 100%;
+    min-width: 100%;
+    align-self: center;
+}
+.display-details{
+    font-size: smaller;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.8em .9rem 0 0.8em;
+    width: 100%;
+    min-width: 100%;
+}
+.display-details a{
+    display: flex;
+}
+.display-details:hover{    
+    color: rgba(49, 49, 49, 0.696);
+}
+.display-details img:hover{    
+    background-color: rgba(49, 49, 49, 0.114);
+    border-radius: 50%;
+}
+.card a button{
+    width:6rem;
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 15px;
+    border-style: ridge;
+    border-width: 1px;
+    border-color: #d4cece94;
+    font-size: 2.8vh;
+}
+.card a button:hover{
+    background-color: hsla(0, 0%, 20%, 0.42);
+    border: #ffffff;   
+}
 footer{
     border: 2px solid;
 }
