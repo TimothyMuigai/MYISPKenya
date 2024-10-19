@@ -161,7 +161,7 @@ h1 {
 }
 .container{    
     max-width: 100%;
-    background-color: rgba(255, 166, 0, 0.742);
+    background: linear-gradient(45deg, rgb(23, 224, 224),rgb(0, 128, 66));
     padding-top: 3rem;    
 }
 .container h2 ,.container p{
