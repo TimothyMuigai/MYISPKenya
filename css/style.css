@@ -161,7 +161,7 @@ h1 {
 }
 .container{    
     max-width: 100%;
-    background-color: hsl(0, 0%, 97%);
+    background-color: rgba(255, 166, 0, 0.742);
     padding-top: 3rem;    
 }
 .container h2 ,.container p{
@@ -184,14 +184,14 @@ h1 {
     background-color: hsl(0, 0%, 99%);
     justify-content: center;
     align-items: center;
-    box-shadow: 4px 4px 6px #e7e7e77e, -4px -4px 6px #e7e7e7a3;
+    /* box-shadow: 4px 4px 6px #e7e7e77e, -4px -4px 6px #e7e7e7a3; */
     padding-bottom: 1.5rem;
     border-radius: 15px;
     transition-duration: 300ms;
     transition-property: box-shadow;
 }
 .card:hover{
-    box-shadow: 16px 16px 6px #e7e7e780, -16px -16px 6px #e7e7e780;
+    box-shadow: 4px 4px 6px #e7e7e77e, -4px -4px 6px #e7e7e7a3;
 }
 .images{    
     height: 100%;
