@@ -10,8 +10,84 @@ body {
     text-align: center;
     height: 418vh;
 }
+nav{
+    display: flex;
+    flex-direction: column;    
+}
+.open{
+    display: flex;
+    justify-content: start;    
+    margin-top: .5rem;
+    margin-bottom: .4rem;
+    align-items: center;
+    width: fit-content;
+    margin-left: .5rem;
+
+}
+.open img{   
+   align-self: center; 
+   height: 2rem;   
+}
+.open img:hover{
+    height: 2.5rem;
+    box-shadow: 2px 3px 6px #333, -2px -3px 6px #333;
+}
+
+.close {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 10rem;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    gap: 10px;
+}
+.close img{
+    height: 2rem;
+    margin-top: .3rem;
+    align-self: flex-end;
+    margin-right: .3rem;
+    border-radius: 50px;
+}
+.close img:hover{
+    height: 2.5rem;
+    box-shadow: 2px 3px 6px #e7e7e7, -2px -3px 6px #e7e7e7;
+}
+.close ul{
+    margin-top: 20px;
+    line-height: 40px;
+    text-align: justify;
+    list-style: none;
+    width: 100%;    
+}
+.close a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.close a:hover{
+    text-decoration: none;
+}
+.close ul li:not(.active){
+    background-color: #858484;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+.active{
+    margin-top: 10px;
+    color: #333;
+    background-color: #ffffff;
+    padding-left: 5px;    
+}
+
+.close ul li:not(.active):hover{
+    color: #333;
+    background-color: #ffffffbe;
+}
 header {
-    margin-top: 50px;
+    margin-top: 10px;
     border-top: 1px inset;
     border-bottom: 1px outset;
     word-wrap: break-word;
@@ -169,12 +245,21 @@ img{
 .display-details a{
     display: flex;
 }
-.display-details:hover{    
+.display-details :hover{    
     color: rgba(49, 49, 49, 0.696);
+    cursor: pointer;
 }
-.display-details img:hover{    
-    background-color: rgba(49, 49, 49, 0.114);
-    border-radius: 50%;
+.extra{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    list-style: none;
+    text-align: justify;
+    letter-spacing: .07em;
+    font-size: smaller;
+    line-height: 1.4em;
+    align-self: flex-end;
+    margin-right:3.3em ;
 }
 .card a button{
     width:6rem;
