@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/provider.css">
+</head>
+<body class="provideBody">
+    <h1 class="providerH1">Register Your Company Here</h1>
+    <fieldset id="content">
+        <legend>Company Information</legend>
+        <form id="companyDetailsForm">
+            <div class="input-group">
+                <label for="companyName">Company Name: <input type="text" id="companyName" name="companyName" required></label>
+                <label for="companyLocation">Company Location: <input type="text" id="companyLocation" name="companyLocation" required></label>                
+            </div>           
+            <fieldset id="cityInputs">
+
+                <legend>Areas You Provide WI-FI to</legend>
+
+                <div class="input-box">
+                    <!-- <div class="input-group">
+                        <label for="area">County/Area: <input type="text" id="area" name="area" placeholder="Enter county/area name" value="Nairobi" required></label>
+                        <label for="city">Area: <input type="text" id="city" name="city" placeholder="Enter city name" value="Nairobi west" required></label>
+                        <button id="EditLocation">Edit</button>
+                        <button id="DeleteLocation">Delete</button>
+                    </div> -->
+                </div>
+
+                <button type="button" onclick="addCityInput()">Add Location</button>                
+
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </fieldset>
+    <script src="javascript/provider.js"></script>
+</body>
+</html>

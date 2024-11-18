@@ -1,0 +1,129 @@
+.provideBody {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.providerH1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 8px;
+    color: #555;
+}
+
+#companyDetailsForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#companyDetailsForm label {
+    flex: 1 1 48%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #555;
+}
+
+#companyDetailsForm input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    outline: none;
+}
+
+#companyDetailsForm input:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.5);
+}
+
+#passwordinfo label svg {
+    margin-right: 8px;
+    vertical-align: middle;
+    fill: #666;
+}
+
+#passwordinfo div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#companyDetailsForm button {
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#companyDetailsForm button[type="submit"] {
+    background: linear-gradient(to right, #0066cc, #004999);
+    border: none;
+}
+
+#companyDetailsForm button[type="button"] {
+    background: linear-gradient(to right, #28a745, #196f31);
+    border: none;
+}
+
+#companyDetailsForm button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+#companyDetailsForm button:active {
+    transform: translateY(1px);
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px;
+    border-top: 1px dashed #ccc;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #companyDetailsForm label {
+        flex: 1 1 100%;
+    }
+
+    #companyDetailsForm button {
+        width: 100%;
+    }
+}

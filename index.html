@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="mainBody">
     
     <nav>        
         <div class="close" style="display: none;" >
@@ -31,8 +31,7 @@
 
         <div class="location">
             <img src="images/location.svg" alt="">
-            <input type="text" name="location" id="location" placeholder="Enter your location">
-            <button>Search</button>
+            <button><a href="map.html">Go See Providers in your Area</a></button>
         </div>
     </header>   
 
@@ -276,43 +275,43 @@
     </div>
 
     <div class="compare-container">
-        <h2>Compare Top providers</h2>
-        <h3 class="comparison">See a side-by-side comparison of speed, price, connection type and more</h3>
+        <h2>Compare Top Providers</h2>
+        <h3 class="comparison">See a side-by-side comparison of speed, price, and more</h3>
         <div class="compare-details">
             <h4>I want to compare:</h4>
             <div>
                 <select name="one" id="selector1" class="selectors">
-                    <option value="" disabled selected >Select option</option>
-                    <option value="options" >Airtel</option>
-                    <option value="options">Safaricom</option>
-                    <option value="options">Starlink</option>
-                    <option value="options">Surfnet solutions</option>
-                    <option value="options">Telkom</option>
-                    <option value="options">Faiba</option>
-                    <option value="options">Poa internet</option>
+                    <option value="" disabled selected>Select option</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="Safaricom">Safaricom</option>
+                    <option value="Starlink">Starlink</option>
+                    <option value="SurfnetSolutions">Surfnet Solutions</option>
+                    <option value="Telkom">Telkom</option>
+                    <option value="Faiba">Faiba</option>
+                    <option value="PoaInternet">Poa Internet</option>
                 </select>
                 &
                 <select name="two" id="selector2" class="selectors">
-                    <option value="" disabled selected >Select option</option>
-                    <option value="options" >Airtel</option>
-                    <option value="options">Safaricom</option>
-                    <option value="options">Starlink</option>
-                    <option value="options">Surfnet solutions</option>
-                    <option value="options">Telkom</option>
-                    <option value="options">Faiba</option>
-                    <option value="options">Poa internet</option>
+                    <option value="" disabled selected>Select option</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="Safaricom">Safaricom</option>
+                    <option value="Starlink">Starlink</option>
+                    <option value="SurfnetSolutions">Surfnet Solutions</option>
+                    <option value="Telkom">Telkom</option>
+                    <option value="Faiba">Faiba</option>
+                    <option value="PoaInternet">Poa Internet</option>
                 </select>
             </div>
-            <button>Compare</button>
+            <button id="compareBtn">Compare</button>
         </div>
-        
+        <h2>Comparison Results</h2>
         <div class="compare-cards">
-            <h2>this vs that</h2>
+            
             <div class="card1"></div>
             <div class="card2"></div>
         </div>
-
     </div>
+    
 
     <footer>
         <h1> <span class="green">MY</span> <span style="text-decoration: underline;">Isp</span> <span class="colors">KENYA</span> </h1>

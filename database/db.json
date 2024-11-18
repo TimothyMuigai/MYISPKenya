@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": "ad79",
+      "Fname": "g",
+      "email": "g@h",
+      "password": "1234qwer",
+      "confirm-pass": "1234qwer"
+    }
+  ],
+  "providers": [
+    {
+      "id": "e112",
+      "name": "faiba",
+      "Provider Location": "kilimani",
+      "locations": [
+        {
+          "city": "westlands, nairobi"
+        }
+      ]
+    }
+  ],
+  "internetPlans": {
+    "Faiba": {
+      "logo": "images/faiba-logo.jpg",
+      "offers": [
+        { "speed": "15mbps", "price": "2,999/month" },
+        { "speed": "20mbps", "price": "2,999/month" },
+        { "speed": "20mbps", "price": "4,100/month" },
+        { "speed": "80mbps", "price": "6,299/month" },
+        { "speed": "500mbps", "price": "12,499/month" },
+        { "speed": "1000mbps", "price": "20,000/month" }
+      ],
+      "installationFee": "5,000",
+      "ratings": 4.5,
+      "link": "https://jtl.co.ke/internet"
+    },
+    "Safaricom": {
+      "logo": "images/saf-logo.jpg",
+      "offers": [
+        { "speed": "5mbps", "price": "2,999/month" },
+        { "speed": "10mbps", "price": "4,000/month" },
+        { "speed": "40mbps", "price": "6,999/month" },
+        { "speed": "100mbps", "price": "12,499/month" }
+      ],
+      "installationFee": "3,000",
+      "ratings": 4.8,
+      "link": "https://safaricom.co.ke/fibre"
+    },
+    "Airtel": {
+      "logo": "images/airtel-logo.jpg",
+      "offers": [
+        { "speed": "10mbps", "price": "2,500/month" },
+        { "speed": "30mbps", "price": "4,999/month" },
+        { "speed": "50mbps", "price": "7,500/month" }
+      ],
+      "installationFee": "2,000",
+      "ratings": 4.2,
+      "link": "https://airtel.co.ke/internet"
+    },
+    "Telkom": {
+      "logo": "images/telcom-logo2.jpg",
+      "offers": [
+        { "speed": "5mbps", "price": "2,499/month" },
+        { "speed": "10mbps", "price": "3,999/month" },
+        { "speed": "50mbps", "price": "7,999/month" }
+      ],
+      "installationFee": "4,000",
+      "ratings": 4.0,
+      "link": "https://telkom.co.ke/internet"
+    },
+    "PoaInternet": {
+      "logo": "images/poa-logo.jpg",
+      "offers": [
+        { "speed": "5mbps", "price": "1,500/month" },
+        { "speed": "10mbps", "price": "2,500/month" },
+        { "speed": "20mbps", "price": "3,500/month" }
+      ],
+      "installationFee": "1,500",
+      "ratings": 3.8,
+      "link": "https://poainternet.net"
+    },
+    "SurfnetSolutions": {
+      "logo": "images/surfnet-logo.jpg",
+      "offers": [
+        { "speed": "10mbps", "price": "3,000/month" },
+        { "speed": "25mbps", "price": "5,000/month" },
+        { "speed": "50mbps", "price": "8,000/month" }
+      ],
+      "installationFee": "3,500",
+      "ratings": 4.1,
+      "link": "https://surfnet.co.ke/internet"
+    },
+    "Starlink": {
+      "logo": "images/starlink-logo.jpg",
+      "offers": [
+        { "speed": "50mbps", "price": "15,000/month" },
+        { "speed": "100mbps", "price": "20,000/month" },
+        { "speed": "200mbps", "price": "25,000/month" }
+      ],
+      "installationFee": "20,000",
+      "ratings": 4.9,
+      "link": "https://starlink.com"
+    }
+  }
+}

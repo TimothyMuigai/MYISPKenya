@@ -5,8 +5,8 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-body {
-    background-color: #ffffff;  
+.mainBody {
+    background-color: #fffffb;
     text-align: center;
     height: 418vh;
 }
@@ -154,6 +154,7 @@ h1 {
     border-radius: 20px;
     padding: 0 .5rem 0 .5rem;
     border-color: transparent;
+    background-color: 6E8387;
 }
 .location button:hover{
     text-decoration: underline;
@@ -161,7 +162,7 @@ h1 {
 }
 .container{    
     max-width: 100%;
-    background: linear-gradient(45deg, rgb(23, 224, 224),rgb(0, 128, 66));
+    background-color:#d8dfee;
     padding-top: 3rem;    
 }
 .container h2 ,.container p{
@@ -173,7 +174,7 @@ h1 {
     gap: 10px;
     row-gap: 50px;
     column-gap: 70px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns:1fr 1fr;
     width: 100%;
     padding: 50px;       
 }
@@ -221,11 +222,12 @@ img{
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    max-width: 100%;
+    min-width: 100%;
     padding: .5rem 0 .5rem 3rem;
 }
 .ratings img {    
     height: 1.5rem;
+    
 }
 .card button{
     border: 2px solid;
@@ -270,6 +272,7 @@ img{
     border-width: 1px;
     border-color: #d4cece94;
     font-size: 2.8vh;
+    background-color: #6E8387;
 }
 .card a button:hover{
     background-color: hsla(0, 0%, 20%, 0.42);
@@ -281,10 +284,11 @@ img{
     width: 50%;
     padding: 50px;  
 }
-.compare-container{
+ .compare-container{
     line-height: 3rem;
     padding-top: 1rem;
 }
+
 .compare-details{
     border: 2px solid;
     margin: 0 4rem;
@@ -310,12 +314,56 @@ img{
     align-self: center;   
     border-radius: 30px;
     outline: none;
-    border-style: solid;
-    background-color: #333333ab;
+    border-style: none;
+    background-color: #6E8387;
 }
 .compare-details button:hover{
     background-color: hsla(0, 0%, 20%, 0.42);
 }
+
+/* new */
+.compare-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 4rem;
+    gap: 2rem;
+}
+
+.compare-container .card1, .compare-container .card2 {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 45%; /* Adjust as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.compare-container .card1 .images img, .compare-container .card2 .images img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.compare-container .card1 ul, .compare-container .card2 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.compare-container .card1 button, .compare-container .card2 button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #6E8387;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.compare-container .card1 button:hover, .compare-container .card2 button:hover {
+    background-color: hsla(0, 0%, 20%, 0.42);
+}
+/* end of new */
 footer{
     border: 2px solid;
 }
@@ -414,4 +462,112 @@ form div.incorrect label{
 }
 form div.incorrect input{
     border-color: tomato;
+}
+/* home.html */
+.homeBody{
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f2f2f2;
+    color: #333;
+}
+/* Header styling */
+/* Navigation styling */
+nav {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav .homenav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Header styling */
+.homeheader {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.homeheader h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.homeheader .green {
+    color: #4CAF50; /* Green color */
+}
+
+.homeheader .colors {
+    color: #FF5722; /* Another color for vibrancy */
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Sign-up box styling */
+.sign-up {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.sign-up p:first-of-type {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Sign-up options styling */
+.sign-up .options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.sign-up .options div {
+    background-color: #6E8387;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.options a{
+    text-decoration: none;
+    color: white;
+} 
+
+.sign-up .options div:hover {
+    background-color: #6e8387cc; /* Darker green on hover */
 }
