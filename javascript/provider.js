@@ -35,6 +35,7 @@ form.addEventListener('submit', async function (event) {
 
         if (response.ok) {
             alert('Provider information successfully added!');
+            window.location.href = 'map.html'; 
         } else {
             console.error('Failed to save provider information:', response.statusText);
         }

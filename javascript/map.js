@@ -43,7 +43,7 @@ function displayProviderLocations(providers) {
                     const lon = parseFloat(data[0].lon);
                     const mainOfficeMarker = L.marker([lat, lon]).addTo(map);
                     const link = providerLinks[provider.name] || '#';
-                    const popupContent = `<strong>${provider.name} (Main Office)</strong><br>Location: <em>${mainOffice}</em><br><a href="${link}" target="_blank">Visit Store</a>`;
+                    const popupContent = `<strong>${provider.name} (Main Office)</strong><br>Location: <em>${mainOffice}</em><br><a href="${link}" target="_blank">View plans</a>`;
                     mainOfficeMarker.bindPopup(popupContent);
                 }
             })
@@ -135,4 +135,8 @@ function showError(message) {
     errorMessage.textContent = message;
 }
 
+const backBtn = document.querySelector('.backbtn');
 
+backBtn.addEventListener('click', () =>{
+    window.history.back();
+})

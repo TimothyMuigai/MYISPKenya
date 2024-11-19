@@ -52,6 +52,7 @@ selector2.addEventListener('change', updateDropdownOptions);
 compareButton.addEventListener('click', async function () {
     const provider1 = selector1.value;
     const provider2 = selector2.value;
+    
 
     if (provider1 && provider2) {
         try {

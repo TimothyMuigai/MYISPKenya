@@ -6,6 +6,21 @@
     color: #333;
 }
 
+.homenav{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    justify-content: end;
+}
+.homenav a{
+    text-decoration: none;
+    color: blue;
+    font-size: larger;
+}
+.homenav a:hover{
+    text-decoration: underline;
+}
+
 .providerH1 {
     font-size: 2.5rem;
     text-align: center;

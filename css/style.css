@@ -154,11 +154,8 @@ h1 {
     border-radius: 20px;
     padding: 0 .5rem 0 .5rem;
     border-color: transparent;
-    background-color: 6E8387;
-}
-.location button:hover{
-    text-decoration: underline;
-    font-size: 1em;
+    margin: auto;
+    background-color: transparent;
 }
 .container{    
     max-width: 100%;
