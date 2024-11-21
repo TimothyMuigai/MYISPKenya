@@ -71,24 +71,25 @@ compareButton.addEventListener('click', async function () {
 });
 
 function updateComparison(providerDetails, provider1, provider2) {
-    const card1 = document.querySelector('.card1');
-    const card2 = document.querySelector('.card2');
+    const card1 = document.querySelector('#card1');
+    const card2 = document.querySelector('#card2');
 
     card1.innerHTML = `
-        <div class="images">
+        <div class="compare-images">
             <img src="${providerDetails[provider1].logo}" alt="${provider1}">
         </div>
         <ul>
+            <p>Best Offers </p>
             ${providerDetails[provider1].offers
                 .map(
-                    offer => `<li>Offer: ${offer.speed}, Price: ${offer.price}</li>`
+                    offer => `<li>${offer.speed}, Price: ${offer.price}</li>`
                 )
                 .join('')}
         </ul>
         <div class="installation-fee">
             <p>Installation Fee: ${providerDetails[provider1].installationFee}</p>
         </div>
-        <div class="ratings">
+        <div class="compare-ratings">
             <p>Ratings: ${providerDetails[provider1].ratings} stars</p>
         </div>
         <a href="${providerDetails[provider1].link}" target="_blank">
@@ -97,13 +98,14 @@ function updateComparison(providerDetails, provider1, provider2) {
     `;
 
     card2.innerHTML = `
-        <div class="images">
+        <div class="compare-images">
             <img src="${providerDetails[provider2].logo}" alt="${provider2}">
         </div>
         <ul>
+                <p>Best Offers </p>
             ${providerDetails[provider2].offers
                 .map(
-                    offer => `<li>Offer: ${offer.speed}, Price: ${offer.price}</li>`
+                    offer => `<li>${offer.speed}, Price: ${offer.price}</li>`
                 )
                 .join('')}
         </ul>

@@ -191,12 +191,12 @@ h1 {
 .card:hover{
     box-shadow: 4px 4px 6px #e7e7e77e, -4px -4px 6px #e7e7e7a3;
 }
-.images{    
+.container .images{    
     height: 100%;
     max-height: 100px;
     align-self: flex-start;
 }
-img{
+.container img{
     height: 100%;
     margin-left: 1.1125rem;
     max-width: 100%;   
@@ -318,49 +318,49 @@ img{
     background-color: hsla(0, 0%, 20%, 0.42);
 }
 
-/* new */
-.compare-cards {
+.compare-cards{
     display: flex;
-    justify-content: space-between;
-    margin: 2rem 4rem;
-    gap: 2rem;
+    border-radius: 20px;
+    width: 90%;
+    margin: 40px auto;
+    gap: 20px;
 }
-
-.compare-container .card1, .compare-container .card2 {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 1rem;
-    width: 45%; /* Adjust as needed */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+.compare-images{
+    width: 98%;
+    height: 150px;
+    
 }
-
-.compare-container .card1 .images img, .compare-container .card2 .images img {
+.compare-images img{
+    height: 100%;
+    margin-left: 1.1125rem;
+    max-width: 100%;
+    float: left;
+}
+.compare-cards .compare-card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px #e7e7e77e, -4px -4px 6px #e7e7e7a3;    
     width: 100%;
-    max-height: 100px;
-    object-fit: contain;
 }
-
-.compare-container .card1 ul, .compare-container .card2 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 1rem 0;
+.compare-cards ul{
+    align-self: flex-start;
+    padding: 0 20px;
 }
-
-.compare-container .card1 button, .compare-container .card2 button {
-    width: 100%;
-    padding: 0.5rem;
-    background-color: #6E8387;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+.compare-cards ul li{
+    list-style: none;
 }
-
-.compare-container .card1 button:hover, .compare-container .card2 button:hover {
-    background-color: hsla(0, 0%, 20%, 0.42);
+.compare-cards .compare-card button{
+    border: 2px solid;
+    width: 100px;
+    min-width: 100%;
+    align-self: center;
 }
-/* end of new */
 footer{
     border: 2px solid;
 }
